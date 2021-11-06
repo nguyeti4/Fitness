@@ -3,6 +3,7 @@ package com.example.searchactivity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.SearchView
 import com.example.searchactivity.databinding.ActivityMainBinding
@@ -28,7 +29,14 @@ class MainActivitySearch : AppCompatActivity() {
 
         binding.list1.adapter = userAdapter
 
+        binding.list1.setOnClickListener{
+
+        }
+
+
         binding.searchBar.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+
+
             override fun onQueryTextSubmit(query: String?): Boolean {
                 binding.searchBar.clearFocus()
                 if(workout.contains(query)){
@@ -42,6 +50,9 @@ class MainActivitySearch : AppCompatActivity() {
                 return false
             }
 
+
+
              } )
     }
     }
+

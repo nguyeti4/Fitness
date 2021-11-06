@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">SearchActivity</string>
+
+    <string-array name="muscleGroup">
+        <item>Target</item>
+        <item>Chest/Pecs</item>
+        <item>Deltoid</item>
+        <item>Biceps</item>
+        <item>Forearms</item>
+        <item>Abdominal</item>
+        <item>Obliques</item>
+        <item>Delts/Shoulders</item>
+        <item>Traps</item>
+        <item>Triceps</item>
+        <item>Lats/Back</item>
+        <item>Glutes</item>
+        <item>Hamstrings</item>
+        <item>Calves</item>
+        <item>Quadriceps</item>
+
+    </string-array>
 </resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivityList">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+
+
+    <TextView
+        android:id="@+id/txtworkout"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_margin="15dp"
+        android:text="Workout List"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextClock
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:format12Hour="EE, dd-MMM"
+        android:padding="5dp"
+        android:textColor="#808080"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/parentlayoutlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:backgroundTint="#483D8B"
+        android:drawableRight="@drawable/ic_add"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:text="Add Workout"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitworkoutinfo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:text="Submit Workout List"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:backgroundTint="#483D8B"
+        android:textColor="#FFFFFF" />
+
+
+
+
+
+
+
+</LinearLayout>
