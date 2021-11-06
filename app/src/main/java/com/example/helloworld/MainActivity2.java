@@ -5,11 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.CalendarView;
+import android.widget.Button;
 
 public class MainActivity2 extends AppCompatActivity {
 
     CalendarView calender;
+    Button home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,15 @@ public class MainActivity2 extends AppCompatActivity {
                 String Date = dayOfMonth + "-" + (month+1) + "-" + year;
                 Intent intent = new Intent(MainActivity2.this,MainActivity3.class);
                 intent.putExtra("key",Date);
+                startActivity(intent);
+            }
+        });
+
+        home = (Button) findViewById(R.id.button2);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this,MainActivity.class);
                 startActivity(intent);
             }
         });
