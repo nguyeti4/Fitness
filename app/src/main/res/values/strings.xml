@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FitnessApp</string>
+    <string name="muscle_diagram">Muscle Diagram</string>
+    <string name="workout_summary">Workout Summary</string>
+    <string name="add_workout">Add Workout</string>
+    <string name="enter">Enter</string>
+    <string-array name="workouts">
+        <item>Bicep Curl</item>
+        <item>Crunches</item>
+        <item>Bench Press</item>
+    </string-array>
+</resources>
