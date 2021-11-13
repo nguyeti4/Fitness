@@ -17,7 +17,7 @@
     <style name="Button.White" parent="ThemeOverlay.AppCompat">
         <item name="colorAccent">@android:color/white</item>
         <item name="borderlessButtonStyle" />
-
+        <item name="background">@null</item>
     </style>
 
 </resources>

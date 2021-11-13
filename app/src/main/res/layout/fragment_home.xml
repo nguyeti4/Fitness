@@ -6,7 +6,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/workOutSummaryCardView"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="150dp"
         android:layout_margin="20dp"
         app:cardCornerRadius="4dp"
@@ -32,8 +32,8 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/workoutSummaryRecyclerView"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
+                android:layout_width="325dp"
+                android:layout_height="0dp"
                 app:layout_constraintBottom_toTopOf="@id/add_workout_text_view"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -45,13 +45,15 @@
                 android:id="@+id/add_workout_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
+                android:layout_gravity="center_horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginEnd="15dp"
-                android:layout_marginBottom="10dp"
-                android:theme="@style/Button.White"
-                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop=".2dp"
+                android:layout_marginBottom="-6dp"
+                android:textSize="11sp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:textColor="#de5a54"
                 android:text="@string/add_workout" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 

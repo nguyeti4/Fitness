@@ -1,7 +1,7 @@
 package com.warmerhammer.fitnessapp.HomeFragment.WorkOutSummaryComponent
 
 data class Workout(
-    var _index: Int,
+    private var _index: Int,
 ) {
 
     var title = "Please select workout..."
@@ -9,11 +9,8 @@ data class Workout(
             field = value
         }
 
-    var index: Int = _index
-        set(value) {
-            field = value
-        }
-        get() = _index
+    fun setIndex(value: Int) {_index = value}
+    fun getIndex() = _index
 
     var muscles: ArrayList<String> = arrayListOf()
         get() = field
