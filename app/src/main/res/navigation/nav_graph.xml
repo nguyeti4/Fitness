@@ -10,6 +10,27 @@
         android:id="@+id/FirstFragment"
         android:name="com.warmerhammer.fitnessapp.HomeFragment.HomeFragmentView"
         android:label="navigation_first_fragment"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_FirstFragment_to_dateDetailFragmentView"
+            app:destination="@id/dateDetailFragmentView" />
+        <action
+            android:id="@+id/action_FirstFragment_to_searchActivityList"
+            app:destination="@id/searchActivityList" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dateDetailFragmentView"
+        android:name="com.warmerhammer.fitnessapp.DateDetailFragment.DateDetailFragmentView"
+        android:label="DateDetailFragmentView" >
+        <argument
+            android:name="date"
+            app:argType="string" />
+    </fragment>
+
+    <activity
+        android:id="@+id/searchActivityList"
+        android:name="com.example.searchactivity.SearchActivityList"
+        android:label="SearchActivityList" />
 
 </navigation>

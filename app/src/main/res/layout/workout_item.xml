@@ -32,7 +32,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight=".90"
-            android:textSize="11sp" />
+            android:textSize="11sp"
+            android:textColor="#394045"
+            />
 
         <ImageView
             android:layout_width="0dp"
@@ -64,7 +66,7 @@
         android:layout_height="match_parent"
         android:layout_marginStart="20dp"
         android:gravity="end"
-        android:textColor="#394045"
+        android:textColor="#505050"
         android:textSize="11sp"
         app:flow_wrapMode="aligned"
         app:layout_constraintBottom_toTopOf="@id/bottom_right_divider"
