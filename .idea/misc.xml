@@ -3,12 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/drawable/ic_add.xml" value="0.1925925925925926" />
+        <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/drawable/ic_baseline_arrow_drop_down_24.xml" value="0.5484375" />
+        <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/drawable/ic_baseline_clear_24.xml" value="0.5484375" />
+        <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/drawable/ic_baseline_delete_outline_24.xml" value="0.5484375" />
+        <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/drawable/ic_baseline_remove_circle_outline_24.xml" value="0.5484375" />
+        <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/drawable/searchview_background.xml" value="0.1" />
         <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/layout/activity_add_new_workout.xml" value="0.14166666666666666" />
         <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/layout/activity_main.xml" value="0.4388888888888889" />
+        <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/layout/activity_main_list.xml" value="0.5322916666666667" />
+        <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/layout/calendar_adapter.xml" value="0.35520833333333335" />
         <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/layout/content_main.xml" value="0.4388888888888889" />
+        <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/layout/custom_calendar.xml" value="0.27720739219712526" />
+        <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/layout/custom_calendar_cell.xml" value="0.5322916666666667" />
         <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/layout/custom_spinner.xml" value="0.3046875" />
+        <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/layout/fragment_calendar.xml" value="0.35520833333333335" />
         <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/layout/fragment_custom_spinner_dialog.xml" value="0.3026041666666667" />
-        <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/layout/fragment_home.xml" value="0.5" />
+        <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/layout/fragment_date_detail_view.xml" value="0.49166666666666664" />
+        <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/layout/main_activity_search.xml" value="0.5322916666666667" />
+        <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/layout/row_add_workout.xml" value="0.5322916666666667" />
         <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/layout/workout_item.xml" value="0.5276923076923077" />
         <entry key="..\:/Users/Richard/AndroidProjects/FitnessApp/app/src/main/res/layout/workout_spinner_item.xml" value="0.25925925925925924" />
       </map>

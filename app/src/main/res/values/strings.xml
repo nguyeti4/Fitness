@@ -2,7 +2,7 @@
     <string name="app_name">FitnessApp</string>
     <string name="muscle_diagram">Muscle Diagram</string>
     <string name="workout_summary">Workout Summary</string>
-    <string name="add_workout">Add Workout</string>
+    <string name="add_workout">Add Workout  </string>
     <string name="enter">Enter</string>
     <string name="choose_workout">Choose workout</string>
     <string name="delete_icon">Delete Icon</string>
@@ -15,6 +15,40 @@
         <item>Crunches</item>
         <item>Bench Press</item>
     </string-array>
-    <!-- TODO: Remove or change this placeholder text -->
+
+    <!--MuscleGroupStringArray -->
+    <string-array name="muscleGroup">
+        <item>Target</item>
+        <item>Chest/Pecs</item>
+        <item>Deltoid</item>
+        <item>Biceps</item>
+        <item>Forearms</item>
+        <item>Abdominal</item>
+        <item>Obliques</item>
+        <item>Delts/Shoulders</item>
+        <item>Traps</item>
+        <item>Triceps</item>
+        <item>Lats/Back</item>
+        <item>Glutes</item>
+        <item>Hamstrings</item>
+        <item>Calves</item>
+        <item>Quadriceps</item>
+    </string-array>
+
+    <!-- Random -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back_button">Back Button</string>
+    <string name="left_chevron">Left Chevron</string>
+    <string name="right_chevron">Right Chevron</string>
+    <string name="sun">SUN</string>
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thu">THU</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+    <string name="_1">1</string>
+    <string name="submit_workout_list">Submit Workout List</string>
+    <string name="workout_list">Workout List</string>
+    <string name="workout_checkmark">Workout Checkmark</string>
 </resources>

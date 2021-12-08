@@ -12,15 +12,14 @@ import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.warmerhammer.fitnessapp.HomeFragment.CustomSpinnerComponent.CustomSpinnerDialogFragment
-import com.warmerhammer.fitnessapp.HomeFragment.CustomSpinnerComponent.CustomSpinnerRecyclerViewAdapter
-import com.warmerhammer.fitnessapp.HomeFragment.listOfHardCodedWorkouts
-import com.warmerhammer.fitnessapp.HomeFragment.listOfWorkouts
 import com.warmerhammer.fitnessapp.R
 
 class WorkoutItemRecyclerViewAdapter(
     private val context: Context,
-    private val workouts: ArrayList<Workout>
+    private val workouts: ArrayList<Workout>,
+    private val loadWorkoutsListener: () -> Unit
 ) : RecyclerView.Adapter<WorkoutItemRecyclerViewAdapter.ViewHolder>() {
+
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -38,7 +37,7 @@ class WorkoutItemRecyclerViewAdapter(
         position: Int
     ) {
         val workout = workouts[position]
-        Log.i("WorkoutRVAdapter", "$workout")
+        Log.i("WorkoutRVAdapter", "RV: $workout")
         holder.workoutItemTextView.text = workout.title
         holder.muscleGroups.text =
             if (workout.muscles.isNotEmpty()) workout.muscles.toString().replace('[', ' ', true)
@@ -55,13 +54,17 @@ class WorkoutItemRecyclerViewAdapter(
 
 
         init {
+            Log.i("WorkoutRVAdapter", "RV")
 
             titleLinearLayout.setOnClickListener{
                 val fm : FragmentManager = (context as AppCompatActivity).supportFragmentManager
-                CustomSpinnerDialogFragment(workouts).show(fm, CustomSpinnerDialogFragment.TAG)
+                CustomSpinnerDialogFragment(workouts[bindingAdapterPosition]) {
+                    if (it == "update") loadWorkoutsListener()
+                    else if (it == "delete") loadWorkoutsListener()
+
+                }.show(fm, CustomSpinnerDialogFragment.TAG)
             }
         }
-
     }
 
     companion object {

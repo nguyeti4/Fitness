@@ -1,19 +1,21 @@
 package com.warmerhammer.fitnessapp.HomeFragment.CustomSpinnerComponent
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.warmerhammer.fitnessapp.HomeFragment.WorkOutSummaryComponent.Workout
 import com.warmerhammer.fitnessapp.R
 
 class CustomSpinnerRecyclerViewAdapter(
-    private val listOfWorkouts: ArrayList<Workout>,
-    val onClickListener: OnClickListener
+    private val filteredListOfHardCodedWorkouts: ArrayList<Pair<String, ArrayList<String>>>
 ) :
     RecyclerView.Adapter<CustomSpinnerRecyclerViewAdapter.ViewHolder>() {
+
+    val limit = 3
+
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -32,20 +34,16 @@ class CustomSpinnerRecyclerViewAdapter(
         holder: ViewHolder,
         position: Int
     ) {
-        val workout = listOfWorkouts[position]
-        holder.spinnerTextView.text = workout.title
-
+        val workout = filteredListOfHardCodedWorkouts[position]
     }
 
-    override fun getItemCount(): Int = listOfWorkouts.size
+    override fun getItemCount(): Int {
+        return if (filteredListOfHardCodedWorkouts.size > limit) limit
+        else filteredListOfHardCodedWorkouts.size
+    }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val spinnerTextView = itemView.findViewById<TextView>(R.id.spinnerTextView)
+//        val spinnerTextView = itemView.findViewById<TextView>(R.id.spinnerTextView)
 
-        init {
-            spinnerTextView.setOnClickListener {
-                onClickListener.onItemClicked(adapterPosition)
-            }
-        }
     }
 }
