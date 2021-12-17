@@ -10,10 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SearchActivity">
         <activity
-            android:name=".MainActivityList"
-            android:exported="true" />
-        <activity
             android:name=".MainActivitySearch"
+            android:exported="true" />
+
+       <activity
+            android:name=".MainActivityList"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

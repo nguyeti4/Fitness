@@ -9,7 +9,7 @@
         <entry key="..\:/Users/Owner/AndroidStudioProjects/SearchActivity/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
         <entry key="..\:/Users/Owner/AndroidStudioProjects/SearchActivity/app/src/main/res/drawable/row_add_language.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/Owner/AndroidStudioProjects/SearchActivity/app/src/main/res/drawable/searchview_background.xml" value="0.2703125" />
-        <entry key="..\:/Users/Owner/AndroidStudioProjects/SearchActivity/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SearchActivity/app/src/main/res/layout/activity_main.xml" value="0.37369207772795215" />
         <entry key="..\:/Users/Owner/AndroidStudioProjects/SearchActivity/app/src/main/res/layout/activity_main_list.xml" value="0.264" />
         <entry key="..\:/Users/Owner/AndroidStudioProjects/SearchActivity/app/src/main/res/layout/row_add_workout.xml" value="0.264" />
         <entry key="..\:/Users/Owner/AndroidStudioProjects/SearchActivity/app/src/main/res/layout/singleitem.xml" value="0.25416666666666665" />
@@ -21,5 +21,8 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="SuppressKotlinCodeStyleNotification">
+    <option name="disableForAll" value="true" />
   </component>
 </project>

@@ -12,6 +12,7 @@
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:hint="Choose workout"
+        android:layout_marginTop="3dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
     <Spinner
@@ -19,6 +20,7 @@
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
         android:gravity="left"
         android:entries="@array/muscleGroup"
         app:layout_constraintLeft_toRightOf="@id/wrkt_name"

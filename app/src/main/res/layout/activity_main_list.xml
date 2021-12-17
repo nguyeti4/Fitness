@@ -14,18 +14,19 @@
         android:layout_marginRight="15dp" />
 
 
-
     <TextView
         android:id="@+id/txtworkout"
         android:layout_width="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"
         android:layout_margin="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
         android:text="Workout List"
         android:textColor="@color/black"
-        android:textSize="22sp" />
+        android:textSize="22sp"
+        android:textStyle="normal
+" />
 
     <TextClock
         android:id="@+id/date"
@@ -49,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginLeft="15dp"
-        android:backgroundTint="#483D8B"
+        android:backgroundTint="#505050"
         android:drawableRight="@drawable/ic_add"
         android:paddingLeft="20dp"
         android:paddingRight="10dp"
@@ -66,7 +67,7 @@
         android:text="Submit Workout List"
         android:textSize="15sp"
         android:textAllCaps="false"
-        android:backgroundTint="#483D8B"
+        android:backgroundTint="#505050"
         android:textColor="#FFFFFF" />
 
 
